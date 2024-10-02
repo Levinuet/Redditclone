@@ -1,0 +1,126 @@
+﻿@page "/posts"
+@inject PostService PostService
+@using Model;
+@using Service;
+
+<h3>Reddit Klon - Tråde</h3>
+
+@if (posts == null)
+{
+    <p><em>Indlæser...</em></p>
+}
+else
+{
+    <ul>
+        @foreach (var post in posts)
+        {
+            <li>
+                <strong>@post.Title</strong> af @post.Author
+                <p>Upvotes: @post.Upvotes | Downvotes: @post.Downvotes</p>
+                <button @onclick="() => UpvotePost(post.Id)">Upvote</button>
+                <button @onclick="() => DownvotePost(post.Id)">Downvote</button>
+
+                <h4>Kommentarer:</h4>
+                <ul>
+                    @foreach (var comment in post.Comments)
+                    {
+                        <li>
+                            <p>@comment.Text</p>
+                            <p>Forfatter: @comment.Author | Stemmer: @comment.Upvotes - @comment.Downvotes</p>
+                            <button @onclick="() => UpvoteComment(post.Id, comment.Id)">Upvote Kommentar</button>
+                            <button @onclick="() => DownvoteComment(post.Id, comment.Id)">Downvote Kommentar</button>
+                        </li>
+                    }
+                </ul>
+
+                <h5>Tilføj en kommentar:</h5>
+                <EditForm Model="newComment" OnValidSubmit="() => AddComment(post.Id)">
+                    <DataAnnotationsValidator />
+                    <ValidationSummary />
+                    <div>
+                        <label>Kommentar:</label>
+                        <InputTextArea @bind-Value="newComment.Text" />
+                    </div>
+                    <div>
+                        <label>Forfatter:</label>
+                        <InputText @bind-Value="newComment.Author" />
+                    </div>
+                    <button type="submit">Tilføj Kommentar</button>
+                </EditForm>
+            </li>
+        }
+    </ul>
+}
+
+@code {
+    private List<Post>? posts;
+    private Comment newComment = new Comment();
+
+    protected override async Task OnInitializedAsync()
+    {
+        posts = await PostService.GetPostsAsync();
+    }
+
+    // Upvote Post
+    private async Task UpvotePost(int postId)
+    {
+        await PostService.UpvotePostAsync(postId);
+        var post = posts.FirstOrDefault(p => p.Id == postId);
+        if (post != null)
+        {
+            post.Upvotes++;
+        }
+    }
+
+    // Downvote Post
+    private async Task DownvotePost(int postId)
+    {
+        await PostService.DownvotePostAsync(postId);
+        var post = posts.FirstOrDefault(p => p.Id == postId);
+        if (post != null)
+        {
+            post.Downvotes++;
+        }
+    }
+
+    // Upvote Comment
+    private async Task UpvoteComment(int postId, int commentId)
+    {
+        await PostService.UpvoteCommentAsync(postId, commentId);
+        var post = posts.FirstOrDefault(p => p.Id == postId);
+        var comment = post?.Comments.FirstOrDefault(c => c.Id == commentId);
+        if (comment != null)
+        {
+            comment.Upvotes++;
+        }
+    }
+
+    // Downvote Comment
+    private async Task DownvoteComment(int postId, int commentId)
+    {
+        await PostService.DownvoteCommentAsync(postId, commentId);
+        var post = posts.FirstOrDefault(p => p.Id == postId);
+        var comment = post?.Comments.FirstOrDefault(c => c.Id == commentId);
+        if (comment != null)
+        {
+            comment.Downvotes++;
+        }
+    }
+
+    // Add Comment
+    private async Task AddComment(int postId)
+    {
+        newComment.PostId = postId;
+        await PostService.AddCommentAsync(postId, newComment);
+
+        // Find post and add the new comment to the list
+        var post = posts.FirstOrDefault(p => p.Id == postId);
+        if (post != null)
+        {
+            post.Comments.Add(newComment);
+        }
+
+        // Reset new comment
+        newComment = new Comment();
+    }
+}

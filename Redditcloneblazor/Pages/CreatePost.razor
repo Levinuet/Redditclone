@@ -1,0 +1,36 @@
+﻿@page "/create-post"
+@inject PostService PostService
+@inject NavigationManager Navigation
+@using Model;
+@using Service;
+
+<h3>Opret Ny Tråd</h3>
+
+<EditForm Model="newPost" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div>
+        <label>Titel:</label>
+        <InputText id="title" @bind-Value="newPost.Title" />
+    </div>
+    <div>
+        <label>Indhold:</label>
+        <InputTextArea id="content" @bind-Value="newPost.Content" />
+    </div>
+    <div>
+        <label>Forfatter:</label>
+        <InputText id="author" @bind-Value="newPost.Author" />
+    </div>
+    <button type="submit">Opret</button>
+</EditForm>
+
+@code {
+    private Post newPost = new Post();
+
+    private async Task HandleValidSubmit()
+    {
+        await PostService.CreatePostAsync(newPost);
+        Navigation.NavigateTo("/posts");
+    }
+}
