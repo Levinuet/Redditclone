@@ -405,3 +405,5 @@ ASALocalRun/
 .localhistory/
 /Redditclone-api/obj
 /Redditcloneblazor/obj/Debug
+/Redditclone-api/bin
+/Redditclone-api/obj
