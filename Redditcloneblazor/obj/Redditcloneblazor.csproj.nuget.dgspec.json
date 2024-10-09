@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Benjamin\\OneDrive\\Skrivebord\\Redditclone\\Redditcloneblazor\\Redditcloneblazor.csproj": {}
+    "C:\\Users\\Levi'\\Desktop\\School\\3.sems\\SoftArk\\Project Reddit\\Redditclone\\Redditcloneblazor\\Redditcloneblazor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Benjamin\\OneDrive\\Skrivebord\\Redditclone\\Redditcloneblazor\\Redditcloneblazor.csproj": {
+    "C:\\Users\\Levi'\\Desktop\\School\\3.sems\\SoftArk\\Project Reddit\\Redditclone\\Redditcloneblazor\\Redditcloneblazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Benjamin\\OneDrive\\Skrivebord\\Redditclone\\Redditcloneblazor\\Redditcloneblazor.csproj",
+        "projectUniqueName": "C:\\Users\\Levi'\\Desktop\\School\\3.sems\\SoftArk\\Project Reddit\\Redditclone\\Redditcloneblazor\\Redditcloneblazor.csproj",
         "projectName": "Redditcloneblazor",
-        "projectPath": "C:\\Users\\Benjamin\\OneDrive\\Skrivebord\\Redditclone\\Redditcloneblazor\\Redditcloneblazor.csproj",
-        "packagesPath": "C:\\Users\\Benjamin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Benjamin\\OneDrive\\Skrivebord\\Redditclone\\Redditcloneblazor\\obj\\",
+        "projectPath": "C:\\Users\\Levi'\\Desktop\\School\\3.sems\\SoftArk\\Project Reddit\\Redditclone\\Redditcloneblazor\\Redditcloneblazor.csproj",
+        "packagesPath": "C:\\Users\\Levi'\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Levi'\\Desktop\\School\\3.sems\\SoftArk\\Project Reddit\\Redditclone\\Redditcloneblazor\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Benjamin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Levi'\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -79,12 +83,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[8.0.8, 8.0.8]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

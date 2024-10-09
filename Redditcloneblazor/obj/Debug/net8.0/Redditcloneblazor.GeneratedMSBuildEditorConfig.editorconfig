@@ -13,39 +13,39 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Redditcloneblazor
 build_property.RootNamespace = Redditcloneblazor
-build_property.ProjectDir = C:\Users\Benjamin\OneDrive\Skrivebord\Redditclone\Redditcloneblazor\
+build_property.ProjectDir = C:\Users\Levi'\Desktop\School\3.sems\SoftArk\Project Reddit\Redditclone\Redditcloneblazor\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Benjamin\OneDrive\Skrivebord\Redditclone\Redditcloneblazor
+build_property.MSBuildProjectDirectory = C:\Users\Levi'\Desktop\School\3.sems\SoftArk\Project Reddit\Redditclone\Redditcloneblazor
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Benjamin/OneDrive/Skrivebord/Redditclone/Redditcloneblazor/App.razor]
+[C:/Users/Levi'/Desktop/School/3.sems/SoftArk/Project Reddit/Redditclone/Redditcloneblazor/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benjamin/OneDrive/Skrivebord/Redditclone/Redditcloneblazor/Pages/CreatePost.razor]
+[C:/Users/Levi'/Desktop/School/3.sems/SoftArk/Project Reddit/Redditclone/Redditcloneblazor/Pages/CreatePost.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlUG9zdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benjamin/OneDrive/Skrivebord/Redditclone/Redditcloneblazor/Pages/Home.razor]
+[C:/Users/Levi'/Desktop/School/3.sems/SoftArk/Project Reddit/Redditclone/Redditcloneblazor/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benjamin/OneDrive/Skrivebord/Redditclone/Redditcloneblazor/Pages/Posts.razor]
+[C:/Users/Levi'/Desktop/School/3.sems/SoftArk/Project Reddit/Redditclone/Redditcloneblazor/Pages/Posts.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9zdHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benjamin/OneDrive/Skrivebord/Redditclone/Redditcloneblazor/_Imports.razor]
+[C:/Users/Levi'/Desktop/School/3.sems/SoftArk/Project Reddit/Redditclone/Redditcloneblazor/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Benjamin/OneDrive/Skrivebord/Redditclone/Redditcloneblazor/Layout/MainLayout.razor]
+[C:/Users/Levi'/Desktop/School/3.sems/SoftArk/Project Reddit/Redditclone/Redditcloneblazor/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-tsiby8paba
 
-[C:/Users/Benjamin/OneDrive/Skrivebord/Redditclone/Redditcloneblazor/Layout/NavMenu.razor]
+[C:/Users/Levi'/Desktop/School/3.sems/SoftArk/Project Reddit/Redditclone/Redditcloneblazor/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-969qxyqsup
