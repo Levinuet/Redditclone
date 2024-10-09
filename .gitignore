@@ -403,3 +403,5 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+/Redditclone-api/obj
+/Redditcloneblazor/obj/Debug
