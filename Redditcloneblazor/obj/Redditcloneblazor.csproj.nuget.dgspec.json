@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Levi'\\Desktop\\School\\3.sems\\SoftArk\\Project Reddit\\Redditclone\\Redditcloneblazor\\Redditcloneblazor.csproj": {}
+    "C:\\Users\\m78694\\Source\\Repos\\Levinuet\\Redditclone\\Redditcloneblazor\\Redditcloneblazor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Levi'\\Desktop\\School\\3.sems\\SoftArk\\Project Reddit\\Redditclone\\Redditcloneblazor\\Redditcloneblazor.csproj": {
+    "C:\\Users\\m78694\\Source\\Repos\\Levinuet\\Redditclone\\Redditcloneblazor\\Redditcloneblazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Levi'\\Desktop\\School\\3.sems\\SoftArk\\Project Reddit\\Redditclone\\Redditcloneblazor\\Redditcloneblazor.csproj",
+        "projectUniqueName": "C:\\Users\\m78694\\Source\\Repos\\Levinuet\\Redditclone\\Redditcloneblazor\\Redditcloneblazor.csproj",
         "projectName": "Redditcloneblazor",
-        "projectPath": "C:\\Users\\Levi'\\Desktop\\School\\3.sems\\SoftArk\\Project Reddit\\Redditclone\\Redditcloneblazor\\Redditcloneblazor.csproj",
-        "packagesPath": "C:\\Users\\Levi'\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Levi'\\Desktop\\School\\3.sems\\SoftArk\\Project Reddit\\Redditclone\\Redditcloneblazor\\obj\\",
+        "projectPath": "C:\\Users\\m78694\\Source\\Repos\\Levinuet\\Redditclone\\Redditcloneblazor\\Redditcloneblazor.csproj",
+        "packagesPath": "C:\\Users\\m78694\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\m78694\\Source\\Repos\\Levinuet\\Redditclone\\Redditcloneblazor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Levi'\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\m78694\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
